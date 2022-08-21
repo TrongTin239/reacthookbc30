@@ -5,12 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UseStateDemo from "./pages/Hookdemo/UseStateDemo/UseStateDemo";
+import UseEffectDemo from "./pages/Hookdemo/UseEffectDemo/UseEffectDemo";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="" element={<App />}>
         <Route path="usestate" element={<UseStateDemo />}></Route>
+        <Route path="useeffect" element={<UseEffectDemo />}></Route>
       </Route>
     </Routes>
   </BrowserRouter>

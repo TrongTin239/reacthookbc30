@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function HeaderHome() {
   return (
     <div className="">
-      <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <NavLink className="navbar-brand" to="/">
           Project Hook
         </NavLink>
@@ -44,9 +44,9 @@ export default function HeaderHome() {
                 <NavLink className="dropdown-item" to="/usestate">
                   UseState
                 </NavLink>
-                <a className="dropdown-item" href="#">
-                  Action 2
-                </a>
+                <NavLink className="dropdown-item" to="/useeffect">
+                  Use Effect
+                </NavLink>
               </div>
             </li>
           </ul>
